@@ -1,14 +1,4 @@
-# Generated manifest.yml based on template version 0.1.0
-# appName = deletelater
-# language=nodejs
-# multitenancy=false
----
 applications:
-# -----------------------------------------------------------------------------------
-# Backend Service
-# -----------------------------------------------------------------------------------
 - name: deletelater1
-  #path:
   memory: 1024M
   buildpacks: [nodejs_buildpack]
-  #command: node index.js
