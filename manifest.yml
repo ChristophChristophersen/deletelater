@@ -1,4 +1,5 @@
 applications:
 - name: deletelater1
   memory: 1024M
-  buildpacks: [nodejs_buildpack]
+  buildpacks: 
+  - nodejs_buildpack
