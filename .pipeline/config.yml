@@ -17,23 +17,12 @@ general:
 
 ### Step-specific configuration
 steps:
-  mavenExecute:
-    dockerImage: devxci/mbtci:1.0.14
 
 ### Stage-specific configuration
 stages:
-  'Confirm':
-    manualConfirmation: false
-  
+
   Build:
-    mavenExecuteStaticCodeChecks: false
-    npmExecuteLint: false
-  Additional Unit Tests:
-    npmExecuteScripts: false
-    karmaExecuteTests: false
-  Acceptance:
-    cloudFoundryDeploy: false
-    uiVeri5ExecuteTests: false
+
   Release:
     cloudFoundryDeploy: true
     cfApiEndpoint: "https://api.cf.eu10.hana.ondemand.com"
